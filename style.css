@@ -1,0 +1,151 @@
+/* css reset */
+body,
+p {
+  margin: 0px;
+  padding: 0px;
+}
+
+p {
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+
+body{
+  background: linear-gradient(45deg, #5f7f93, #416074, #1B2931, #090E10);
+  animation: background 20s infinite;
+  background-size: 400% 400%;
+  height: 100vh;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+/* corpo calculadora */
+
+.calculadora-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 500px;
+  background-color: #fff6e9;
+  margin: auto;
+  border: 5px solid #ffcb80;
+  box-shadow: 15px 10px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
+}
+
+.calculadora-display {
+  height: 50px;
+  max-width: 400px;
+  display: block;
+  background-color: #9bceb5;
+  margin: 30px;
+  padding: 30px;
+  text-align: end;
+  box-shadow: inset 5px 10px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+}
+
+.calculadora-texto {
+  font-family: "Ubuntu Mono";
+  font-size: 50px;
+}
+
+.calculadora-numeros {
+  max-width: 400px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+.numero-linha {
+  max-width: 400px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin: auto;
+}
+
+/* teclas */
+.numero {
+  font-family: "Ubuntu Mono";
+  font-size: 40px;
+  padding: 15px 30px;
+  background: #ddeee6;
+  border: 3px solid #99ccb4;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 40px;
+}
+.imagem {
+  padding: 15px 15px;
+  background: #b8463c;
+  border: 3px solid #732c26;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+  display: block;
+  border-radius: 40px;
+}
+
+.muda_cor {
+  animation: muda_cor_verde 0.2s 1;
+}
+
+@keyframes muda_cor_vermelho {
+  0% {
+    background: #b8463c;
+    border: 3px solid #732c26;
+  }
+  50% {
+    background: #732c26;
+    border: 3px solid #260f0d;
+  }
+  100% {
+    background: #b8463c;
+    border: 3px solid #732c26;
+  }
+}
+
+@keyframes muda_cor_laranja {
+  0% {
+    background: #eecbaa;
+    border: 3px solid #dd9655;
+  }
+  50% {
+    background: #dd9655;
+    border: 3px solid #aa6322;
+  }
+  100% {
+    background: #eecbaa;
+    border: 3px solid #dd9655;
+  }
+}
+
+@keyframes muda_cor_verde {
+  0% {
+    background: #ddeee6;
+    border: 3px solid #99ccb4;
+  }
+  50% {
+    background: #98cdb3;
+    border: 3px solid #99ccb4;
+  }
+  100% {
+    background: #ddeee6;
+    border: 3px solid #99ccb4;
+  }
+}
+
+@keyframes background {
+  0%{
+    background-position: 0% 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0% 50%;
+  }
+}

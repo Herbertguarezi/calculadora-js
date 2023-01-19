@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+</head>
+
+<body class="animation">
+  <div class="container">
+    <div class="calculdora-container">
+
+    </div>
+
+
+
+
+    <div class="calculadora-container">
+      <div class="calculadora-display">
+        <p class="calculadora-texto"></p>
+      </div>
+      <div class="calculadora-numeros">
+        <div class="numero-linha">
+          <div>
+            <p onclick="limpa()" id="simbolo" class="numero" style="background: #E5AF7D; border: 3px solid #D57C2A;">C</p>
+          </div>
+          <img onclick="deletar()" id="deletar" class="imagem" src="./img/DEL (4).svg" alt="deletar">
+          <div>
+            <p onclick="insert('%')" id="simbolo" class="numero" style="background: #EECBAA; border: 3px solid #DD9655;">%</p>
+          </div>
+          <div>
+            <p onclick="insert('/')" id="simbolo" class="numero" style="background: #EECBAA; border: 3px solid #DD9655;">/</p>
+          </div>
+        </div>
+
+        <div class="numero-linha">
+          <div>
+            <p onclick="insert('7')" id="numero" class="numero">7</p>
+          </div>
+          <div>
+            <p onclick="insert('8')" id="numero" class="numero">8</p>
+          </div>
+          <div>
+            <p onclick="insert('9')" id="numero" class="numero">9</p>
+          </div>
+          <div>
+            <p onclick="insert('*')" id="simbolo" class="numero" style="background: #EECBAA; border: 3px solid #DD9655;">*</p>
+          </div>
+        </div>
+
+        <div class="numero-linha">
+          <div>
+            <p onclick="insert('4')" id="numero" class="numero">4</p>
+          </div>
+          <div>
+            <p onclick="insert('5')" id="numero" class="numero">5</p>
+          </div>
+          <div>
+            <p onclick="insert('6')" id="numero" class="numero">6</p>
+          </div>
+          <div>
+            <p onclick="insert('-')" id="simbolo" class="numero" style="background: #EECBAA; border: 3px solid #DD9655;">-</p>
+          </div>
+        </div>
+
+        <div class="numero-linha">
+          <div>
+            <p onclick="insert('1')" id="numero" class="numero">1</p>
+          </div>
+          <div>
+            <p onclick="insert('2')" id="numero" class="numero">2</p>
+          </div>
+          <div>
+            <p onclick="insert('3')" id="numero" class="numero">3</p>
+          </div>
+          <div>
+            <p onclick="insert('+')" id="simbolo" class="numero" style="background: #EECBAA; border: 3px solid #DD9655;">+</p>
+          </div>
+        </div>
+
+        <div class="numero-linha" style="grid-template-columns: repeat(5, 1fr);">
+          <div>
+            <p onclick="insert('.')" id="numero" class="numero">.</p>
+          </div>
+          <div style="grid-column: 2/5; text-align: center;">
+            <p onclick="insert('0')" id="numero" class="numero">0</p>
+          </div>
+          <div>
+            <p onclick="calcula()" id="simbolo" class="numero" style="background: #CD8065; border: 3px solid #9A4D32; grid-column: 5;">=</p>
+          </div>
+        </div>
+      </div>
+
+      <script src="./js/script.js"></script>
+</body>
+
+</html>
+
